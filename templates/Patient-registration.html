@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/SignUp.css" />
+    <script src="../assets/js/script.js" defer></script>
+    <title>Patient registraion</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Hello Dear Patient !</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div class="progress-step progress-step-active" data-title="Info" ></div>
+        <div class="progress-step" data-title="Contact"></div>
+        <div class="progress-step" data-title="ID"></div>
+        <div class="progress-step" data-title="Password"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="First Name">First Name</label>
+          <input type="text" name="fname" id="fname" required >
+        </div>
+        <div class="input-group">
+            <label for="Middle Name">Middle Name</label>
+            <input type="text" name="mname" id="mname" required >
+          </div>
+        <div class="input-group">
+          <label for="Last Name">Last Name</label>
+          <input type="text" name="lname" id="lname" required >
+        </div>
+        <div class="input-group">
+          <label for="ID">SSN</label>
+          <input type="number" name="SSN" id="SSN" />
+        </div>
+        <div class="btns-group">
+          <a href="index.html" class="btn">Home</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="mail" id="mail" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="DOB" id="DOB" />
+        </div>
+        <div class="input-group">
+          <label for="ID">SSN</label>
+          <input type="number" name="SSN" id="SSN" />
+        </div>
+        <select name="Bloodtype" id="Bloodtype" class="form-select">
+          <label for="Bloodtype">Blood type</label>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="AB">AB</option>
+          <option value="O">O</option>
+        </select>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
