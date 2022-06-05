@@ -949,7 +949,7 @@ section {
   padding: 10px !important;
 }
 .appointment .php-email-form input:focus, .appointment .php-email-form textarea:focus, .appointment .php-email-form select:focus {
-  border-color: #1977cc;
+  border-color: #cc1919;
 }
 .appointment .php-email-form input, .appointment .php-email-form select {
   height: 44px;
@@ -958,7 +958,7 @@ section {
   padding: 10px 12px;
 }
 .appointment .php-email-form button[type=submit] {
-  background: #1977cc;
+  background: #cc1919;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -966,7 +966,7 @@ section {
   border-radius: 50px;
 }
 .appointment .php-email-form button[type=submit]:hover {
-  background: #1c84e3;
+  background: #e31c1c;
 }
 
 /*--------------------------------------------------------------
@@ -982,18 +982,18 @@ section {
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
-  color: #2c4964;
+  color: #642c2c;
   border-radius: 0;
   border-right: 2px solid #ebf1f6;
   font-weight: 600;
   font-size: 15px;
 }
 .departments .nav-link:hover {
-  color: #1977cc;
+  color: #cc1919;
 }
 .departments .nav-link.active {
-  color: #1977cc;
-  border-color: #1977cc;
+  color: #cc1919;
+  border-color: #cc1919;
 }
 .departments .tab-pane.active {
   -webkit-animation: fadeIn 0.5s ease-out;
@@ -1208,7 +1208,7 @@ section {
   margin: 0;
 }
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #badaf7;
+  color: #f7baba;
   font-size: 26px;
 }
 .testimonials .testimonial-item .quote-icon-left {
@@ -1235,10 +1235,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1977cc;
+  border: 1px solid #cc1919;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1977cc;
+  background-color: #cc1919;
 }
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
@@ -1281,11 +1281,11 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #1977cc;
+  color: #cc1919;
   float: left;
   width: 44px;
   height: 44px;
-  background: #d6e9fa;
+  background: #fad6d6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1297,19 +1297,19 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #2c4964;
+  color: #642c2c;
 }
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #4b7dab;
+  color: #ab4b4b;
 }
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #1977cc;
+  background: #cc1919;
   color: #fff;
 }
 .contact .php-email-form {
@@ -1368,7 +1368,7 @@ section {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #1977cc;
+  background: #cc1919;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1376,7 +1376,7 @@ section {
   border-radius: 50px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #1c84e3;
+  background: #e31c1c;
 }
 @-webkit-keyframes animate-loading {
   0% {
