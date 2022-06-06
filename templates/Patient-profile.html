@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - Medilab Bootstrap Template</title>
+  <title>Patient Profile</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -69,21 +69,11 @@
           <li><a class="nav-link scrollto" href="#about">About </a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#team">Meet us</a></li>
-          <li><a class="nav-link scrollto" href="Login.html">Login</a></li>
-          <li class="dropdown"><a href="#"><span>Sign Up</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="Patient-registration.html">Patient</a></li>
-              <li><a href="#">Doctor</a></li>
-              <li><a href="#">Admin</a></li>
-            </ul>
-          </li>
+          <li><a class="nav-link scrollto" href="index.html">Log out</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
-
     </div>
   </header><!-- End Header -->
 
@@ -94,10 +84,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>Hello Dear Patient</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li>Profile</li>
           </ol>
         </div>
 
@@ -106,9 +96,108 @@
 
     <section class="inner-page">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="card">
+                  <div class="card-header card-header-primary">
+                    <h4 class="card-title">Edit Profile</h4>
+                    <p class="card-category">Complete your profile</p>
+                  </div>
+                  <div class="card-body">
+                    <form action="{{ url_for('patientProfile') }}" method="POST" autocomplete="off">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">First Name </label>
+                            <input type="text"value="{{account[0]}}" name="patientFname" class="form-control" required>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">Middle Name</label>
+                            <input type="text"value="{{account[1]}}" name="patientLname"  class="form-control" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">Last Name </label>
+                            <input type="text"value="{{account[0]}}" name="patientFname" class="form-control" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">ID</label>
+                            <input type="number"value="{{account[2]}}"name="PID" class="form-control"  required>                        </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">Password</label>
+                            <input type="number"value="{{account[3]}}" name="patientpassword" class="form-control"  required>                        </div>
+  
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5">
+                           
+  
+                          <div class="form-group">
+                            <label class="bmd-label-floating">birthdate</label>
+                            <input type="date"value="{{account[4]}}" name="birthdate" class="form-control"  required>                        </div>
+  
+                        </div>
+                        
+                        <div class="col-md-4">
+                           
+  
+                          <div class="form-group">
+                            <label class="bmd-label-floating">Mobile Phone</label>
+                            <input type="tel"value="{{account[5]}}" name="mobilephone" class="form-control"  required>                  </div>
+  
+                        </div>
+  
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Gender</label>
+                          <input type="text" value="{{account[6]}}" name="Gender" class="form-control">
+                                                  
+                      </div>
+                    </div>
+                        
+                    </div>
+                      <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-profile">
+                  <div class="card-avatar" style="background-image: url('../static/img/74.jpg'); background-size: cover;">
+                    <a  href="#pablo" >
+                    
+                      <input type="file" class="my-file">
+                      
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-category">Patient</h6>
+                    <h4 class="card-title">{{account[0]}}</h4>
+                    <p class="card-description">
+                      Brrilent Patient Say Hii...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
       </div>
     </section>
 
