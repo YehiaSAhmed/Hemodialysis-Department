@@ -29,8 +29,8 @@
     border-radius: 0.25rem;
   }
   
-  .width-50 {
-    width: 50%;
+  .width-100 {
+    width: 100%;
   }
   
   .ml-auto {
@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     counter-reset: step;
-    margin: 2rem 0 4rem;
+    margin: 0rem 0 0rem;
   }
   
   .progressbar::before,
