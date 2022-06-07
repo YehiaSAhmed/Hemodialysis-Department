@@ -11,3 +11,5 @@ Mina Azer | 2 | 45
 Yehia Said | 2 | 54
 ___
 ## ER Model
+![Test Image](../Hemodialysis-Department/ER%20Model.png)
+
