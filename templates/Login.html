@@ -22,7 +22,7 @@
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1"> Admin </label>
             <input type="ID" placeholder="ID" class="form-control mb-3" required />
-            <input type="password" placeholder="Password" class="form-control mb-3" required/>
+            <input type="password" name="password" placeholder="Password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, one lowercase letter, and at least 8 or more characters" required/>
             <div class="checkbox"
             <label> <input type="checkbox" > Remember me</label>
             <div class=""> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyJKooJvFYNBeAFzXTEALLYTNb56Kzoqk4hGJLpmE5Kv2BKQ/viewform">Forgotten password? </a> </div>
