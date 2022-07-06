@@ -18,8 +18,24 @@ mycursor = mydb.cursor()
 app = Flask(__name__)
 
 
+STATIC_FOLDER = 'assets'
+app = Flask(__name__, static_folder=STATIC_FOLDER)
+
+
+STATIC_FOLDER = 'static'
+app = Flask(__name__, static_folder=STATIC_FOLDER)
+
+
 @app.route('/')
 def index():
+    return render_template('index.html')
+
+@app.route('/View.html/index.html')
+def home():
+    return render_template('index.html')
+
+@app.route('/Login.html/index.html')
+def Lhome():
     return render_template('index.html')
 
 
