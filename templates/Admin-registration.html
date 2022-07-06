@@ -25,44 +25,70 @@
                         <div class="card-body">
                             <!-- <form action="{{ url_for('AdminRegistration')}}" method="POST"> -->
                             <form action="{{ url_for('AdminRegistration')}}" method="POST">
-                                <div class="row">
+                            <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label class="bmd-label-floating"> Name </label>
-                                            <input type="text" name="A_name" class="form-control" placeholder="John Smith William" pattern="[a-Za-z\s]" minlength="3" maxlength="50" required/>
+                                            <label class="bmd-label-floating"> First name </label>
+                                            <input type="text" name="A_fname" class="form-control" placeholder="John" pattern="[a-Za-z\s]" minlength="3" maxlength="20" required/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating"> Middle name </label>
+                                            <input type="text" name="A_mname" class="form-control" placeholder="Smith" pattern="[a-Za-z\s]" minlength="3" maxlength="20" required/>
                                         </div>
                                     </div>
 
-                                </div>
-                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating"> Last name </label>
+                                            <input type="text" name="A_lname" class="form-control" placeholder="William" pattern="[a-Za-z\s]" minlength="3" maxlength="20" required/>
+                                        </div>
+                                    </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">ID</label>
-                                            <input type="number" name="A_ID" class="form-control" min="1" pattern="[0-9]{11}" required/>
+                                            <input type="number" name="A_ID" min="1" class="form-control" min="1" max="11" pattern="[0-9]{11}" required/>
+                                        </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="A_gender">Gender</label>
+                                            <select name="A_gender" id="A_gender">
+                                             <option value="Male">Male</option>
+                                             <option value="Female">Female</option>
+                                            </select>
+        
                                         </div>
                                     </div>
-
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Social security number</label>
+                                            <input type="number" name="A_ssn" min="1" class="form-control" min="1" max="11" pattern="[0-9]{11}" required/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Address</label>
+                                            <input type="text" name="A_address" class="form-control" pattern="[A-Za-z0-9_]{5,40}" required/>
+                                        </div>
+                                    </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Password</label>
                                             <input type="password" name="A_password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
-                                  </div>
-                                          </div>
-                                </div>
-
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Confirm Password</label>
+                                            <input type="password" name="A_cpassword" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+                                        </div>
+                                    </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label class="bmd-label-floating">Age</label>
-                                        <input type="number" name="A_Age" class="form-control" min="1"  max="122" required/>
+                                        <label class="bmd-label-floating">Birthdate</label>
+                                        <input type="date" name="A_bd" class="form-control" min="1900-01-01" max="2022-12-31" required/>
                                     </div>
-                                </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <label class="bmd-label-floating">Gender</label>
-                                    <input type="text" name="A_gender" class="form-control" required/>
-
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -71,12 +97,11 @@
                                     <input type="number" name="A_phone" class="form-control" placeholder="012345678901" pattern="[0-9]{11}" required/>
                                 </div>
                             </div>
-                        </div>
 
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="bmd-label-floating">Email</label>
-                                <input type="email" name="A_Email" class="form-control" pattern=".+@gmail\.com" size="30" required/>
+                                <input type="email" name="A_email" class="form-control" pattern=".+@gmail\.com" size="30" required/>
                             </div>
                         </div>
                     </div>
