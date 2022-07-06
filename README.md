@@ -27,10 +27,10 @@ Now follow the following steps to ensure the program runs correctly on your IDE:
 
 ## Project constituents
 The project is made using Flask Python (Back-end) and the following Front-end languages:
--HTML
--CSS
--JavaScript
--PHP
+- HTML
+- CSS
+- JavaScript
+- PHP
 
 The website contains the main page from which you can get more information about hemodialysis, and navigate to other pages.
 From the main page you can go to the registration pages (*admin, doctor, and patient registration pages*), login page that leads you to your respective profile (*whether it's admin, doctor, or patient profile*), and view page that shows you all the information in the database (***except admins password***)
