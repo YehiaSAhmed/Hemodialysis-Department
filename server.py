@@ -21,8 +21,7 @@ app = Flask(__name__)
 STATIC_FOLDER = 'assets'
 app = Flask(__name__, static_folder=STATIC_FOLDER)
 
-
-STATIC_FOLDER = 'static'
+STATIC_FOLDER_2 = 'static'
 app = Flask(__name__, static_folder=STATIC_FOLDER)
 
 
